@@ -1,0 +1,10 @@
+extends layout
+
+block content
+  form(action = '/', method="post")  
+    h1= 'Formulário'
+    span= 'nome completo'
+    input(type="text", name='nome')
+    span= 'email'
+    input(name='email', type="text")
+    button enviar
